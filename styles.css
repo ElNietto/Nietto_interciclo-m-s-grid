@@ -6,9 +6,11 @@
     box-sizing: border-box;
 }
 
+p{
+    font-size: xx-small;
+}
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
     display: grid;
     height: 100vh;
 }
@@ -23,13 +25,19 @@ body{
 }
 
 
-
 /*------------contenedores-------*/
 
 
 .Cont1 {
-    background-color: antiquewhite;
+    background-color: rgb(227, 248, 248);
 }
+
+.Ch1{
+    width: 3rem;
+    font-size: 3rem;
+    font-family: thin;
+}
+
 
 @media screen and ( min-width: 714px){
     
@@ -41,7 +49,7 @@ body{
 }
 
 .Cont2 {
-    background-color: rgb(245, 195, 130);
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -54,7 +62,7 @@ body{
 
 
 .Cont3 {
-    background-color: rgb(37, 196, 188);
+    background-color: rgb(223, 226, 226);
 }
 
 @media screen and ( min-width: 714px){
