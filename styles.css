@@ -13,7 +13,7 @@ body{
     height: 100vh;
 }
 
-@media screen and ( min-width: 714px){
+@media screen and ( min-width: 720px){
     
     body{
         grid-template-columns: 1fr 1fr;
@@ -55,10 +55,10 @@ h1{
    }
    
    
-   @media (min-width: 60rem){
+   @media (min-width: 740px){
        .main-nav{
            width: 50%;
-           bottom: 2rem;
+           bottom: 1rem;
        }
    }
   
@@ -86,16 +86,40 @@ h1{
 
 
 
-@media screen and ( min-width: 714px){
+@media screen and ( min-width: 520px){
     
     .Cont1 {
+        height: 50vh;
+        display: flex;
+    }
+
+    .Ch1{
+        width: 16rem;
+        font-size: 4rem;
+        margin: auto;
+
+    }
+
+    .Ch1p { 
+        width: 20rem;
+        font-size: 0.8rem ;
+        margin: auto;
+    }
+}
+
+@media screen and ( min-width: 740px){
+    
+    .Cont1 {
+        width: 50vw;
         height: 100vh;
         grid-row: span 2;
+        display: block;
     }
 
     .Ch1{
         width: 20rem;
         font-size: 4.5rem;
+        margin-left: 1rem;
     }
 
     .Ch1p { 
@@ -129,16 +153,41 @@ h1{
 
 
 
-@media screen and ( min-width: 714px){
+@media screen and ( min-width: 520px){
+    
+    .Cont2 {
+        height: 35vh;
+        display: inline-flex;
+    }
+
+
+    .Ch2{
+        width: 16rem;
+        font-size: 2rem;
+        margin: auto ;
+
+    }
+
+    .Ch2p { 
+        width: 20rem;
+        font-size: 0.8rem ;
+        margin: auto;
+    }
+}
+
+@media screen and ( min-width: 740px){
     
     .Cont2 {
         height: 50vh;
+        display: block;
     }
 
 
     .Ch2{
         width: 20rem;
         font-size: 2rem;
+        margin-left: 1rem;
+
     }
 
     .Ch2p { 
@@ -146,7 +195,6 @@ h1{
         font-size: 0.8rem ;
         margin: 1rem auto;
     }
-
 }
 
 
@@ -161,10 +209,11 @@ h1{
 }
 
 .Ch3contenedor{
+    overflow: hidden;
     padding: 0.3rem;
     height: 10rem;
     width: 80%;
-    margin-inline: auto;
+    margin: 0.5rem auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.3rem;
@@ -177,33 +226,44 @@ h1{
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    
 }
 
 .Ch3ContItem img{
     max-height: 100%;
     transition: 0.5s;
-    scale: 100%;
-
-
+    filter: grayscale(100%);
 }
 
 
 .Ch3ContItem:hover img{
     max-height: 120%;
+    filter: grayscale(0%);
+
 }
 
 
-@media screen and ( min-width: 714px){
+@media screen and ( min-width: 740px){
     
     .Cont3 {
         height: 50vh;
+
     }
 
 
     .Ch3{
         width: 20rem;
         font-size: 2rem;
+        margin: 1rem;
+
     }
+
+    .Ch3contenedor{
+      
+        height: 70%;
+        width: 90%;
+        margin-inline: 0.5rem auto;
+        
+    }
+
 
 }
