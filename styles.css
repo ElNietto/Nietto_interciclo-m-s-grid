@@ -202,11 +202,9 @@ h1{
 
 .Cont3 {
     background-color: rgb(223, 226, 226);
+
 }
 
-.Ch3{
-    margin: 2rem 1rem 0rem 1rem;
-}
 
 .Ch3contenedor{
     overflow: hidden;
@@ -221,12 +219,18 @@ h1{
 
 
 .Ch3ContItem {
-    background-color: beige;
     border-radius: .5rem;
     overflow: hidden;
-    align-items: center;
-    justify-content: center;
+
 }
+
+.Ch3ContItem:hover {
+    transform: scale(1.05);
+    border-radius: .5rem;
+
+
+}
+
 
 .Ch3ContItem img{
     max-height: 100%;
@@ -236,16 +240,42 @@ h1{
 
 
 .Ch3ContItem:hover img{
-    max-height: 120%;
     filter: grayscale(0%);
+    transform: scale(1.5);
+    justify-content: center;
+
 
 }
+
+
+@media screen and ( min-width: 520px){
+    .Cont3 {
+        height: 50vh;
+        
+    }
+
+    .Ch3{
+        width: 18rem;
+        font-size: 1.5rem;
+        margin: 1rem;
+
+    }
+
+    .Ch3contenedor{
+      
+        height: 70%;
+        width: 90%;
+    }
+    
+}
+
 
 
 @media screen and ( min-width: 740px){
     
     .Cont3 {
         height: 50vh;
+        display: block;
 
     }
 
@@ -261,7 +291,7 @@ h1{
       
         height: 70%;
         width: 90%;
-        margin-inline: 0.5rem auto;
+        margin-inline:  auto;
         
     }
 
